@@ -3,6 +3,20 @@
 
 작성일: 2018.07.12
 
+## build
+1. git clone
+```
+$ git clone https://github.com/J911/ng-memo-app.git
+```
+2. change dir and node modules install
+```
+$ cd ng-memo-app
+$ npm i
+```
+3. build or start
+```
+$ ng build // or ng serve
+```
 ## 배운 내용
 - typescript
   - interface
