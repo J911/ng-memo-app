@@ -25,3 +25,6 @@ $ ng build // or ng serve
   - @input
 - HTML5
   - LocalStorage
+ 
+## demo
+- [demo](https://j911.me/ng-memo-app/dist/ng-memo-app/)
