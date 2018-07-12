@@ -1,0 +1,4 @@
+<app-header></app-header>
+<div class="memo-wrapper">
+  <app-memo *ngFor="let m of memo; let i = index" [memo]="m" [index]="i"></app-memo>
+</div>
