@@ -5,9 +5,6 @@ interface Memo {
   createDate: string
 }
 
-@Injectable({
-  providedIn: 'root'
-})
 export class MemoService {
   private memo: Array<Memo> = new Array;
 

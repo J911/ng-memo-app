@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MemoComponent } from './memo/memo.component';
 
+import { MemoService } from './memo.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,7 @@ import { MemoComponent } from './memo/memo.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [MemoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
