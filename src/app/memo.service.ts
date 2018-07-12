@@ -6,9 +6,10 @@ interface Memo {
 }
 
 export class MemoService {
-  private memo: Array<Memo> = new Array;
+  private memo: Array<Memo>;
 
   constructor() {
+    this.memo = JSON.parse(localStorage.getItem('memo')) || new Array;;
   }
 
   createMemo(contents: string = ''): void {
@@ -21,6 +22,7 @@ export class MemoService {
 
   updateMemo(index: number, contents: string = ''): void {
     this.memo[index].contents = contents;
+    localStorage.setItem('memo', JSON.stringify(this.memo));
   }
 
   getMemo(): Array<object> {

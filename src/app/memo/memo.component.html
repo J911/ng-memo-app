@@ -1,5 +1,6 @@
 <div class="memo">
-  <textarea class="contents" #contents (keyup)="updateMemo(contents.value)">{{ memo.contents }}</textarea>
+  <textarea class="contents" #contents 
+  (keyup)="updateMemo(contents.value)">{{ memo.contents }}</textarea>
 
   <div class="create-date">
     {{ memo.createDate }}
